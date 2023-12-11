@@ -1,7 +1,0 @@
-gradio
-pillow
-soundfile
-imageio
-apng
-pydub
-ffmpeg
