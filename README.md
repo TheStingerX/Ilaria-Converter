@@ -46,6 +46,7 @@ It saves the converted file and returns the path of the file.
 ## 🙏 Credits 🙏
 
 - [**GatienDoesStuff**](https://github.com/GatienDoesStuff) - For helping with the Gradio UI and issues with some file conversions
+- [**sonphantrung**](https://github.com/sonphantrung) - For fixing and adding support for the M4R format
 
 ## 🤝 Contributing 🤝
 

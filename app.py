@@ -22,7 +22,7 @@ def main():
             with gr.Row():
                 audio_input = gr.Audio(type='filepath')
                 with gr.Column():
-                    audio_output_format = gr.Dropdown(["wav", "flac", "ogg", "mp3", "aac", "m4a"], label="Audio Output Format")
+                    audio_output_format = gr.Dropdown(["wav", "flac", "ogg", "mp3", "aac", "m4a", "m4r"], label="Audio Output Format")
                     change_bitrate = gr.Checkbox(label="Change Bitrate?")
                     audio_bitrate = gr.Dropdown(["128", "256", "320"], label="Audio Bitrate")
                 convert_audio_butt = gr.Button(value='Convert Audio', variant='primary')
@@ -54,6 +54,8 @@ def convert_audio(audio_file, output_format, change_bitrate, bitrate):
 
     # Create the ffmpeg command
     command = ['ffmpeg', '-y', '-i', audio_file]
+    if output_format == "m4r":
+        command.extend(['-f', 'mp4'])
     if change_bitrate:
         command.extend(['-b:a', f'{bitrate}k'])
     command.append(output_audio_file)
