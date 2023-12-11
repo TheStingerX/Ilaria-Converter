@@ -45,7 +45,7 @@ It saves the converted file and returns the path of the file.
 
 ## 🙏 Credits 🙏
 
-- **Alex Murkoff** - For his invaluable help and useful tips
+- [**GatienDoesStuff**](https://github.com/GatienDoesStuff) - For helping with the Gradio UI and issues with some file conversions
 
 ## 🤝 Contributing 🤝
 
